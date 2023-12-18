@@ -52,7 +52,7 @@ public class MindustryJsPlugin extends Plugin{
                 str.append(arg).append(" ");
             }
             Call.sendMessage("[yellow][[JS][white] " + str);
-            player.sendMessage("[yellow][[JS][white] " + mods.getScripts().runConsole(str.toString()).replace("[", "[["));
+            player.sendMessage("[yellow][[JS][white] [[" + player.name + "[white]] " + mods.getScripts().runConsole(str.toString()).replace("[", "[["));
         });
     }
 }
